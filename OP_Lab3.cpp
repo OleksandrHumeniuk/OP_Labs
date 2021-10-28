@@ -1,10 +1,3 @@
-//
-//  main.cpp
-//  Lab#4
-//
-//  Created by Sasha Humeniuk on 10/27/21.
-//
-
 #include <iostream>
 #include <cmath>
 
