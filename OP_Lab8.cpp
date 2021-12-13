@@ -13,6 +13,7 @@ int inputArrayLength();
 int** buildNewArray(int);
 void outputArray(int ** array, int length);
 void sortArrayAscending(int ** array, int length);
+void deleteArray(int ** array, int length);
 
 bool isNegativeRow(int *array);
 int diagonalSum(int ** array, int length);
@@ -70,6 +71,10 @@ int main() {
         outputArray(arr3, m);
     }
     
+    deleteArray(arr1, m);
+    deleteArray(arr2, m);
+    deleteArray(arr3, m);
+
     
     return 0;
 }
@@ -181,3 +186,11 @@ void sortArrayAscending(int ** array, int length){ // Sort 2D array in ascending
         }
     }
 }
+
+void deleteArray(int ** array, int length){ // Deletes 2D array
+    for (int i = 0; i < length; i++){
+        delete[] array[i];
+    }
+    delete[] array;
+}
+
